@@ -41,18 +41,57 @@ It explores **feature engineering, model tuning, and hyperparameter optimization
 git clone https://github.com/yourusername/AutoGluon-Kaggle-Ride-Sharing.git
 cd AutoGluon-Kaggle-Ride-Sharing
 
-# 📥 Downloading the Dataset (Kaggle API)
+---
+
+### **🚀 Step-by-Step Guide to Setting Up Kaggle API and Downloading the Dataset Securely**
+
+To download the dataset using Kaggle’s API, follow these steps to ensure **security and proper setup**.
+
+---
+
+## Step 1: Get Your Kaggle API Key
+1. Go to [Kaggle](https://www.kaggle.com/) and **log in**.
+2. Click on your **profile picture (top-right corner) → "Account"**.
+3. Scroll down to the **API** section and click **"Create New API Token"**.
+4. This will download a file named **`kaggle.json`**, which contains your API credentials.
+
+---
+
+## Step 2: Store Your Kaggle API Key Securely
+To avoid exposing your credentials, store them in a **`.env` file** instead of hardcoding them in your scripts.
+
+
+create a `.env` file in your project directory:
+```sh
+touch .env
+```
+Then, **edit `.env`** and add your Kaggle credentials:
+```ini
+KAGGLE_USERNAME=your_kaggle_username
+KAGGLE_KEY=your_kaggle_api_key
+```
+
+---
+
+## Step 3: Ensure You Have Access to the Dataset
+Before downloading the dataset, **make sure you have accepted the Bike-Sharing-Demand Competition terms**.
+
+1. Go to the **Kaggle competition page**.
+2. Click **“Rules”** and **accept the terms**.
+
+---
 
 
 
-To download the dataset, you need a Kaggle API key.
+## Step 4: Add `.env` to `.gitignore` to Keep It Private
+To prevent your API credentials from being uploaded to GitHub, add `.env` to your `.gitignore` file:
+```sh
+echo ".env" >> .gitignore
+```
 
-### Step 1: Download kaggle.json
-	1.	Go to Kaggle → Profile → Account
-	2.	Click “Create New API Token” and make note of your username and token to input into the notebook
-    3.      Make sure you have accepted the terms and conditions of the competition to be able to access the dataset
-    4. Ensue you have the .kaggle folder in root directory
+---
 
+## **🚀 You’re All Set!**
 
 
 ---

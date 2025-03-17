@@ -30,7 +30,7 @@ It explores **feature engineering, model tuning, and hyperparameter optimization
 - Identify the **best strategy** for improving AutoGluon models.  
 
 ### **6️⃣ Performance Metric**  
-- Using **RMSE (Root Mean Squared Error)** to evaluate model effectiveness.  
+- Using **RMSE (Root Mean Squared Error)** to evaluate model effectiveness and the impacts of the feature engineering and hyperparameter tuning.
 
 ---
 
@@ -51,6 +51,7 @@ To download the dataset, you need a Kaggle API key.
 	1.	Go to Kaggle → Profile → Account
 	2.	Click “Create New API Token” and make note of your username and token to input into the notebook
     3.      Make sure you have accepted the terms and conditions of the competition to be able to access the dataset
+    4. Ensue you have the .kaggle folder in root directory
 
 
 
