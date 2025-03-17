@@ -1,0 +1,10 @@
+# Core Libraries
+numpy
+pandas
+matplotlib
+seaborn
+
+
+# Jupyter & Other Tools
+jupyter
+ipython

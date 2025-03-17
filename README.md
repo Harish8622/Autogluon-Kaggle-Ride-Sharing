@@ -1,10 +1,66 @@
-# Autogluon-Kaggle-Ride-Sharing
+# 🚴‍♂️ AutoGluon-Kaggle-Ride-Sharing  
 
-In this project, I use Autogluon to predict ride sharing demand and submit the results as part of the Bike Sharing Demand Kaggle competition. The project will be based on the dataset available from there
-- I start by performing some EDA to understand the dataset
-- I then use AutoGluon's TabularPredictor with its standard settings to obtain some baseline models and submit this score to Kaggle as a baseline score.
-- I then revist the EDA to perform feature engineering and explore how this can improve the Kaggle score
-- I perform some hyperparameter tuning to explore how this can futher improve the Kaggle score
-- Finally, I will reflect upon the findings of this project and evaluate the most effective way of improving the performance of a model created with AutoGluon
+This project predicts **bike rental demand** using **AutoGluon**, as part of the **Kaggle Bike Sharing Demand competition**.  
+It explores **feature engineering, model tuning, and hyperparameter optimization** to improve RMSE scores.  
 
-- Throughout this project, I will use RMSE (Root Mean Squared Error) to evaluate the models performance and to understand the impacts of feature engineering and hyperparameter optimisation
+---
+
+## 📌 Project Overview  
+
+### **1️⃣ Exploratory Data Analysis (EDA)**  
+- Analyze dataset trends and visualize distributions.  
+- Identify **seasonal patterns, temperature effects, and peak demand hours**.  
+
+### **2️⃣ Baseline Model with AutoGluon**  
+- Train an **initial `TabularPredictor` model** with default settings.  
+- Submit predictions to **Kaggle** as a **benchmark score**.  
+
+### **3️⃣ Feature Engineering & Model Improvement**  
+- Extract additional features to enhance model accuracy:  
+  - `hour`, `is_rush_hour`, `weekday`, `temperature_interaction`  
+- Train an updated model and compare performance.  
+
+### **4️⃣ Hyperparameter Optimization (HPO)**  
+- Tune **key hyperparameters** for better model performance:  
+  - `num_boost_round`, `learning_rate`, `max_depth`  
+- Evaluate optimized models **vs. baseline performance**.  
+
+### **5️⃣ Final Evaluation & Findings**  
+- Compare **feature engineering vs. hyperparameter tuning** impact.  
+- Identify the **best strategy** for improving AutoGluon models.  
+
+### **6️⃣ Performance Metric**  
+- Using **RMSE (Root Mean Squared Error)** to evaluate model effectiveness and the impacts of the feature engineering and hyperparameter tuning.
+
+---
+
+## 🛠️ Setup Instructions  
+
+### **🔹 1️⃣ Clone the Repository**  
+
+git clone https://github.com/yourusername/AutoGluon-Kaggle-Ride-Sharing.git
+cd AutoGluon-Kaggle-Ride-Sharing
+
+# 📥 Downloading the Dataset (Kaggle API)
+
+
+
+To download the dataset, you need a Kaggle API key.
+
+### Step 1: Download kaggle.json
+	1.	Go to Kaggle → Profile → Account
+	2.	Click “Create New API Token” and make note of your username and token to input into the notebook
+    3.      Make sure you have accepted the terms and conditions of the competition to be able to access the dataset
+
+
+
+---
+## Now Work Through the notebook
+
+
+---
+ Resources & Acknowledgments
+
+	•	Dataset: Kaggle Bike Sharing Demand
+	•	ML Frameworks Used: AutoGluon
+	•	Developed by: Harish Kumaravel
