@@ -38,7 +38,8 @@ The dataset consists of:
 | Model | RMSE Score | Kaggle Score | Fit Time (s) | Predict Time (s) | Best Model Type |
 |--------|-----------|-------------|-------------|----------------|----------------|
 | Baseline (AutoGluon Default) | 1.79680 | 52.982261 | 335.457640 | 22.879514 | WeightedEnsemble_L3 |
-| Feature Engineered Model | 0.60 | 0.65 | 240 | 1.5 | LightGBM |
+| Feature Engineered Model (datetime features)| 0.61670 | 30.570485 | 405.330824 | 25.945760 | WeightedEnsemble_L3 |
+| Feature Engineered Model (interaction features)| 0.66653 | 30.874522 | 361.120610 | 23.320942 | WeightedEnsemble_L3 |
 | Hyperparameter Tuned Model | 0.50 | 0.52 | 600 | 2.0 | LightGBM |
 
 

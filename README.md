@@ -51,6 +51,7 @@ To download the dataset, you need a Kaggle API key.
 	1.	Go to Kaggle → Profile → Account
 	2.	Click “Create New API Token” and make note of your username and token to input into the notebook
     3.      Make sure you have accepted the terms and conditions of the competition to be able to access the dataset
+    4. Ensue you have the .kaggle folder in root directory
 
 
 
