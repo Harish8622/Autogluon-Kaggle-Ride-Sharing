@@ -1,0 +1,37 @@
+# Ignore AutoGluon model artifacts
+AutogluonModels/
+AutogluonModels/**/*
+
+# Ignore dataset files
+*.csv
+*.zip
+*.json
+data/
+data/**/*
+
+# Ignore logs and cache files
+logs/
+logs/**/*
+__pycache__/
+*.log
+*.pkl
+*.npy
+
+# Ignore Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Ignore environment and dependency files
+venv/
+.env
+.DS_Store
+
+# Ignore model save files
+best_model/
+best_model/**/*
+model/
+model/**/*
+
+# Ignore Kaggle credentials
+kaggle.json
+/home/ec2-user/.kaggle/kaggle.json
+~/.kaggle/kaggle.json
