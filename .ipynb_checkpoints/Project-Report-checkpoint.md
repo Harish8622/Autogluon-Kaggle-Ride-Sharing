@@ -4,7 +4,7 @@
 This project aims to predict **bike rental demand** using machine learning models trained with **AutoGluon**. The dataset is sourced from the **Kaggle Bike Sharing Demand competition**, which includes features such as **weather conditions, timestamps, and seasonal effects**. The goal is to minimize **RMSE (Root Mean Squared Error)** and identify the best-performing model.  
 
 ## 2️⃣ Feature Engineering Approach  
-The datetime column was engineered to create two new features `hour` and `month`, to provide more granularity in the time based features
+The datetime column was engineered to create new features to provide more time-based information when training the model.
 
 ### **🔹 Step 1: Adding Time-Based Features**  
 - Assumed **time-related features** (e.g., `hour`, `month`) could improve predictions.
