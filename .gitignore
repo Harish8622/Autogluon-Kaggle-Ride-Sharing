@@ -35,3 +35,4 @@ model/**/*
 kaggle.json
 /home/ec2-user/.kaggle/kaggle.json
 ~/.kaggle/kaggle.jsonAutogluonModels/
+AutogluonModels/
