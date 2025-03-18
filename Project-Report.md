@@ -4,11 +4,11 @@
 This project aims to predict **bike rental demand** using machine learning models trained with **AutoGluon**. The dataset is sourced from the **Kaggle Bike Sharing Demand competition**, which includes features such as **weather conditions, timestamps, and seasonal effects**. The goal is to minimize **RMSE (Root Mean Squared Error)** and identify the best-performing model.  
 
 ## 2️⃣ Feature Engineering Approach  
-Instead of conducting a full Exploratory Data Analysis (EDA) first, we made **assumptions about potentially useful features** and tested their impact iteratively.  
+The datetime column was engineered to create two new features `hour` and `month`, to provide more granularity in the time based features
 
 ### **🔹 Step 1: Adding Time-Based Features**  
-- Assumed **time-related features** (e.g., `hour`, `weekday`, `month`) could improve predictions.
-- Created `hour`, `weekday`, `month`, and `rush_hour` from the `datetime` column.
+- Assumed **time-related features** (e.g., `hour`, `month`) could improve predictions.
+- Created `hour`, `month` and `rush_hour` from the `datetime` column.
 - This led to a significant RMSE improvement from **52.98 → 30.57**.  
 
 ### **🔹 Step 2: Adding Interaction Features**  
@@ -35,7 +35,7 @@ To understand the impact of adding interaction features, we generated a correlat
 | **Feature Set** | **RMSE Score** | **Observation** |
 |---------------|-------------|----------------|
 | Baseline Model (Default Features) | **52.98** | No feature engineering applied. |
-| Time-Based Features Added | **30.57** | Significant improvement. `hour`, `weekday`, and `month` added. |
+| Time-Based Features Added | **30.57** | Significant improvement. `hour` and `month` added. |
 | Interaction Features Added | **30.87** | Slightly worse due to multicollinearity. |
 
 ## 4️⃣ Results & Model Comparison  
