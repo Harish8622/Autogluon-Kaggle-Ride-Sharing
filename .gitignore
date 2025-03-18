@@ -34,4 +34,4 @@ model/**/*
 # Ignore Kaggle credentials
 kaggle.json
 /home/ec2-user/.kaggle/kaggle.json
-~/.kaggle/kaggle.json
+~/.kaggle/kaggle.jsonAutogluonModels/
